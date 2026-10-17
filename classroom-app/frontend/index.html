@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelas Online</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <h1>🏫 Kelas Online — Pemrograman Web</h1>
+      <div class="user-switch">
+        <label for="currentUser">Masuk sebagai:</label>
+        <select id="currentUser"></select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Form buat postingan baru (pengumuman / tugas) -->
+    <section class="card new-post-card">
+      <h2>Buat postingan baru</h2>
+      <form id="newPostForm">
+        <div class="form-row">
+          <select id="postType">
+            <option value="assignment">📄 Tugas</option>
+            <option value="announcement">📢 Pengumuman</option>
+          </select>
+          <input type="text" id="postTitle" placeholder="Judul" required />
+        </div>
+        <textarea id="postDescription" placeholder="Deskripsi / instruksi tugas..." rows="3"></textarea>
+        <div class="form-row">
+          <label class="due-date-label">
+            Tenggat (opsional):
+            <input type="datetime-local" id="postDueDate" />
+          </label>
+          <button type="submit" class="btn-primary">Posting</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Daftar postingan -->
+    <section id="postsList" class="posts-list">
+      <p class="muted">Memuat postingan...</p>
+    </section>
+
+  </main>
+
+  <!-- Template untuk 1 kartu postingan (di-clone lewat JS) -->
+  <template id="postTemplate">
+    <article class="card post-card">
+      <div class="post-header">
+        <span class="badge"></span>
+        <div>
+          <h3 class="post-title"></h3>
+          <p class="post-meta"></p>
+        </div>
+      </div>
+      <p class="post-description"></p>
+      <p class="post-due"></p>
+
+      <div class="submission-box">
+        <h4>📎 Kumpulkan tugas</h4>
+        <form class="submit-form">
+          <input type="file" required />
+          <button type="submit" class="btn-secondary">Kirim file</button>
+        </form>
+        <ul class="submission-list"></ul>
+      </div>
+
+      <div class="comment-box">
+        <h4>💬 Komentar kelas</h4>
+        <ul class="comment-list"></ul>
+        <form class="comment-form">
+          <input type="text" placeholder="Tulis komentar..." required />
+          <button type="submit" class="btn-secondary">Kirim</button>
+        </form>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

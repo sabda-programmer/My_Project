@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Belajar.com</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="login">
+            <h1 class="title">Welcome</h1>
+            <form class="form" id="formLogin">
+                <div class="form-group">
+                    <label for="name" placeholder="Username">Name</label>
+                    <br>
+                    <input type="text" id="nama" placeholder="username" class="form-isi" />
+                    <br>
+                    <label for="password" placeholder="password">Password</label>
+                    <br>
+                    <input type="password" id="password" placeholder="password" class="form-isi" />
+                    <span class="toggle-password" onclick="togglePassword()"><img src="./foto/view.png" width="26"
+                            height="26" id="icon"></span>
+                    <br>
+                    <div class="tombol">
+                        <button type="submit" id="login" class="btn">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

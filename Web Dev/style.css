@@ -1,0 +1,175 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: radial-gradient(circle closest-corner at 50% 50%, blue, cornflowerblue, aqua);
+}
+
+header {
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.subject {
+    margin-right: auto;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 1.5s ease;
+    animation: typing 1.6 infinite;
+}
+
+.subject:hover {
+    color: orange;
+    transform: rotate(360deg);
+}
+
+nav ul {
+    display: flex;
+    padding: 20px;f
+}
+
+li {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+li a {
+    transition: all 2.5s ease;
+    display: inline-block;
+}
+
+li a:hover {
+    color: orange;
+    transform:  rotate(360deg);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: orange;
+    color: black;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.img-foto {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+}
+
+.parallax {
+    background-image: url('assets/foto/yoru-valorant.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+}
+
+.tentang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: darkblue;
+    color: white;
+    padding: 20px 10px;
+}
+
+.btn-2 {
+    margin-top: 16px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-item {
+    background-color: #f7f7f7;
+    color: black;
+    width: 50vh;
+    height: 140px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 5);
+}
+
+.icon-1, .icon-2, .icon-3 {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    padding: 20px;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+@media  screen and (max-width: 576px) {
+    .card {
+        flex-wrap: wrap;
+        padding: 0px;
+        
+    }
+
+    .parallax {
+        background-image: auto;
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (min-width: 577) {
+    .card-item {
+        margin: 0px;
+        width: 100%;
+        opacity: .9;
+    }
+}
+
+@keyframes myAnimation {
+    
+}

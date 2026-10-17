@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f3f4f8;
+    color: #1f2430;
+}
+
+.topbar {
+    background: #3f51b5;
+    color: white;
+    padding: 14px 0;
+}
+
+.topbar-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.topbar h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.user-switch {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.user-switch select {
+    padding: 4px 6px;
+    border-radius: 6px;
+    border: none;
+}
+
+.container {
+    max-width: 760px;
+    margin: 24px auto;
+    padding: 0 16px 60px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    padding: 18px 20px;
+    margin-bottom: 20px;
+}
+
+.new-post-card h2 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.form-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"] {
+    flex: 1;
+}
+
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #d0d3dc;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.due-date-label {
+    font-size: 13px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-primary {
+    background: #3f51b5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: #33429b;
+}
+
+.btn-secondary {
+    background: #eef0f7;
+    border: 1px solid #d0d3dc;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background: #e2e5f2;
+}
+
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.muted {
+    color: #888;
+    font-size: 14px;
+}
+
+.post-header {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.badge {
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 20px;
+    background: #e8eaf6;
+    color: #3f51b5;
+    white-space: nowrap;
+    margin-top: 3px;
+}
+
+.badge.announcement {
+    background: #fff3e0;
+    color: #ef6c00;
+}
+
+.post-title {
+    margin: 0;
+    font-size: 16px;
+}
+
+.post-meta {
+    margin: 2px 0 0;
+    font-size: 12px;
+    color: #888;
+}
+
+.post-description {
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+.post-due {
+    font-size: 12px;
+    color: #d32f2f;
+    margin: 0 0 10px;
+}
+
+.submission-box,
+.comment-box {
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+    margin-top: 12px;
+}
+
+.submission-box h4,
+.comment-box h4 {
+    font-size: 13px;
+    margin: 0 0 8px;
+    color: #444;
+}
+
+.submit-form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.submit-form input[type="file"] {
+    flex: 1;
+    font-size: 12px;
+}
+
+.submission-list,
+.comment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 8px;
+}
+
+.submission-list li,
+.comment-list li {
+    font-size: 13px;
+    padding: 6px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.submission-list a {
+    color: #3f51b5;
+    text-decoration: none;
+}
+
+.submission-list a:hover {
+    text-decoration: underline;
+}
+
+.comment-list li b {
+    color: #3f51b5;
+}
+
+.comment-form {
+    display: flex;
+    gap: 8px;
+}
+
+.comment-form input {
+    flex: 1;
+}

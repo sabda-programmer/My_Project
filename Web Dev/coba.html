@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jambul</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        :root {
+            --background-color: darkblue;
+            --font-color: white;
+        }
+
+        *,
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: var(--background-color);
+            color: var(--font-color);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .judul {
+            margin-right: auto;
+            margin-top: 10px;
+            margin-left: 20px;
+            color: white;
+            cursor: pointer;
+            transition: all 1.5s ease-in-out;
+        }
+
+        .judul:hover {
+            transform: rotate(360deg);
+            margin-left: 50px;
+        }
+
+        nav ul {
+            display: flex;
+            padding: 20px;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        li a {
+            text-decoration: none;
+            font-size: 16px;
+            margin-right: 10px;
+            color: var(--font-color);
+            cursor: pointer;
+            transition: all 1s ease-in;
+            display: inline-block;
+        }
+
+        li a:hover {
+            transform: scale(2);
+        }
+
+        .btn {
+            font-size: 16px;
+            background: orange;
+            color: black;
+            margin-right: 20px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: all 2s ease;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .btn:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="judul">judul</h1>
+        <nav>
+            <ul>
+                <li><a href="#">satu</a></li>
+                <li><a href="#">dua</a></li>
+                <li><a href="#">tiga</a></li>
+            </ul>
+        </nav>
+        <button class="btn">follow</button>
+    </header>
+    <main>
+        <div class="container" onclick="location.href='index.html'">
+            <div class="card" id="C">
+                <div class="card-item">
+                    <img src="icon/logo.png" alt="icon1" class="icon-1" />
+                    <p class="card-title">Fakeout (C)</p>
+                    <p class="card-description">Mengeluarkan bayangan Yoru yang berjalan maju.</p>
+                </div>
+            </div>
+    </main>
+</body>
+
+</html>

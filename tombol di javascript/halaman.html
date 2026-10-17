@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web video</title>
+    <style>
+        *, html, body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #background {
+            min-width: 100%;
+            min-height: 100%;
+            position: fixed;
+            right: 0;
+        }
+
+        .intro {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        p {
+            color: white;
+        }
+
+        #btn {
+            padding: 5px 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: all .5s ease-in-out;
+        }
+
+        #btn:hover {
+            background-color: aqua;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="trailer">
+        <source src="tengkorak.mp4" type="video/mp4">
+    </video>
+    <center>
+        <div class="intro">
+            <p>Selamat datang di website kami</p>
+            <button id="btn" onclick="trigger()">pause</button>
+        </div>
+    </center>
+    <script>
+        const trailer = document.getElementById("trailer")
+        const btn = document.getElementById("btn")
+
+        function trigger() {
+            if(trailer.paused) {
+                trailer.play()
+                btn.innerHTML = "Paused"
+            }else {
+                trailer.pause()
+                btn.innerHTML = "Play"
+            }
+        }
+    </script>
+</body>
+</html>

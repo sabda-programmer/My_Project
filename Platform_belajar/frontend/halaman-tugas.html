@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengumpulan Tugas | Platform Belajar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="navbar-brand">📚 Platform Belajar</div>
+    <div class="navbar-menu">Pengumpulan Tugas</div>
+  </header>
+
+  <main class="container">
+
+    <section class="card form-card">
+      <h1>Kirim Tugas</h1>
+      <p class="subtitle">Lengkapi form di bawah ini untuk mengumpulkan tugas kamu.</p>
+
+      <form id="formTugas">
+        <div class="form-group">
+          <label for="nama_siswa">Nama Lengkap</label>
+          <input type="text" id="nama_siswa" name="nama_siswa" placeholder="Contoh: Budi Santoso" required>
+        </div>
+
+        <div class="form-group">
+          <label for="nim_nis">NIM / NIS</label>
+          <input type="text" id="nim_nis" name="nim_nis" placeholder="Contoh: 2201001" required>
+        </div>
+
+        <div class="form-group">
+          <label for="judul_tugas">Judul Tugas</label>
+          <input type="text" id="judul_tugas" name="judul_tugas" placeholder="Contoh: Tugas Basis Data - Minggu 3"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="deskripsi">Deskripsi / Catatan (opsional)</label>
+          <textarea id="deskripsi" name="deskripsi" rows="3"
+            placeholder="Catatan tambahan untuk pengajar..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="file_tugas">File Tugas</label>
+          <div class="dropzone" id="dropzone">
+            <input type="file" id="file_tugas" name="file_tugas" hidden required>
+            <p id="dropzoneText">Klik atau seret file ke sini<br><span>PDF, DOC, DOCX, PPT, PPTX, ZIP, PNG, JPG — maks
+                10MB</span></p>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-submit" id="btnSubmit">Kirim Tugas</button>
+      </form>
+
+      <div id="alertBox" class="alert" style="display:none;"></div>
+    </section>
+
+    <section class="card list-card">
+      <h2>Tugas yang Sudah Dikumpulkan</h2>
+      <div id="listTugas" class="list-tugas">
+        <p class="empty-state">Memuat data...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    &copy; 2026 Platform Belajar — Fitur Pengumpulan Tugas
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan tombol</title>
+</head>
+<body>
+    <img src="assets/sabda.jpeg" width="200px" height="200px" id="foto1"/>
+    <h1>Ganti foto</h1>
+    <button id="btn" onclick="tombol()">Fauziyah</button>
+    <button id="btn" onclick="balik()">Sabda</button>
+
+    <script>
+        function tombol() {
+            let foto1 = document.getElementById('foto1');
+            foto1.src = "assets/fauziyah.jpeg"
+        }
+
+        function balik() {
+            let foto1 = document.getElementById('foto1')
+            foto1.src = "assets/sabda.jpeg"
+        }
+    </script>
+</body>
+</html>
